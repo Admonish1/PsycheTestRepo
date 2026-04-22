@@ -1,11 +1,11 @@
 // ─── models.js ───────────────────────────────────────────────
-// Thee.js GLTF model loading for Psyche asteroid and Sun
+// GLTF model loading for Psyche asteroid and Sun
 
 const loader = new THREE.GLTFLoader();
 
 // Load Psyche asteroid model
 loader.load(
-    './models/psyche/scene.glb',
+    './modules/psyche/scene.glb',
     function (gltf) {
         const model = gltf.scene;
         model.scale.set(8, 8, 8);
@@ -46,7 +46,7 @@ loader.load(
 
 // Load Sun model
 loader.load(
-    './models/psyche/sun.glb',
+    './modules/psyche/sun.glb',
     function (gltf) {
         sunModel = gltf.scene;
         sunModel.position.set(0, 0, 0);
