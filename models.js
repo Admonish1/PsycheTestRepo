@@ -5,7 +5,7 @@ const loader = new THREE.GLTFLoader();
 
 // Load Psyche asteroid model
 loader.load(
-    './modules/psyche/scene.glb',
+    './models/psyche/scene.glb',
     function (gltf) {
         const model = gltf.scene;
         model.scale.set(8, 8, 8);
@@ -46,7 +46,7 @@ loader.load(
 
 // Load Sun model
 loader.load(
-    './modules/psyche/sun.glb',
+    './models/psyche/sun.glb',
     function (gltf) {
         sunModel = gltf.scene;
         sunModel.position.set(0, 0, 0);
